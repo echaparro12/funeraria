@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <script src="js/jquery-3.4.1.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"src = "js/programas.js" ></script> 
+    <script src="js/datos.js"></script>
+    <script  type="text/javascript" src="js/chosen.jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body{
+        background-color: #A3D2FF;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <header>
+      <img src="./img/par2.jpg" class="img-fluid"/>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <a class="navbar-brand text-light" href="inicio1.html">Funeraria</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="inicio1.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="planes.html">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="registro.html">Registro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+
+    
+
+    <h1 class="text-center"><i><Strng>Formulario de Registro.</Strng></i></h1>
+  </br>
+  <form class="form-horizontal" method="#" action="#">
+  <div class="container">
+    <h4 class="text-center">Formulario del Encargado.</h4>
+  </br>
+    <div class="form-group">
+      
+      <label class="control-label col-sm-2 col-sm-offset-2" for="name">Nombre:</label>
+      <div class="col-lg-5  col-sm-5">
+        <input type="text" class="form-control" id="nombres" placeholder="Ingresa el nombre" name="name" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="lastname">Apellido:</label>
+    
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="lastname" placeholder="Ingresa el apellido" name="lastname" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="idtf">Tipo de Identificación</label>
+
+      <div class="col-sm-5">
+      <select class="form-control" id="tipo" name="idtf">
+        <option selected>Seleccione un Tipo de Documento</option>
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="CE">Cédula de Extranjería</option>
+        <option value="NIT">NIT</option>
+        <option value="PSP">Pasaporte</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="ndi">Número de Identificación</label>
+      <div class="col-sm-5">
+      <input type="text" class="form-control" id="ide" placeholder="Número de Indentificación" name="ndi" required>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="email">Email:</label>
+    
+      <div class="col-sm-5">
+        <input type="email" class="form-control" id="email" placeholder="Ingresa un correo" name="email" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="telefono">Telefono:</label>
+    
+      <div class="col-sm-5">
+        <input type="telefono" class="form-control" id="telefono" placeholder="Ingresa su telefono" name="telefono" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="direccion">Dirección:</label>
+    
+      <div class="col-sm-5">
+        <input type="direccion" class="form-control" id="direccion" placeholder="Ingresa su direccion" name="direccion" required>
+      </div>
+    </div>
+    <br>
+
+  </div>
+
+<div class="container">
+    <h4 class="text-center">Formulario del Finado.</h4><br>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="name2">Nombre:</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="nombre2" placeholder="Ingresa el nombre" name="name2" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="lastname2">Apellido:</label>
+    
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="lastname2" placeholder="Ingresa el apellido" name="lastname2" required>
+      </div>
+    </div>
+
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="idtf2">Tipo de Identificación</label>
+
+      <div class="col-sm-5">
+      <select class="form-control" id="tipo2" name="idtf2">
+        <option selected>Seleccione un Tipo de Documento</option>
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="CE">Cédula de Extranjería</option>
+        <option value="NIT">NIT</option>
+        <option value="PSP">Pasaporte</option>
+      </select>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="ndi2">Número de Identificación</label>
+
+      <div class="col-sm-5">
+      <input type="text" class="form-control" id="ide2" placeholder="Número de Indentificación" name="ndi2" required>
+    </div>
+  </div>
+
+
+    <div class="form-group">
+    <label class="control-label col-sm-2 col-sm-offset-2" for="Ciclo">Proceso:</label>
+    <div class="col-sm-5">
+     <select  class="form-control" name="Ciclo" id="Ciclo"  data-placeholder="- Seleccione Ciclo -"
+     class="form-control chosenCiclo" onchange="change(this.id, 'programas')"
+             value="<%= typeof Ciclo != 'undefined' ? Ciclo : '' %>">
+              <option value=""></option>
+              <option value="sepultura">Sepultura Natural</option>
+              <option value="cremacion">Cremación</option>
+            </select>
+    </div>
+   </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="Programas">Precios:
+      </label>
+       <div class="col-sm-5">
+        <select class="form-control" id="programas" name="Programas" data-placeholder="Seleccione Programas"
+          class="form-control chosenProgramas" value="<%= typeof Programas != 'undefined' ? Programas : '' %>" >
+            <option value=""></option>
+          </select>
+        </div>
+    </div>
+   <br>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-8">
+        <button type="submit" id="guardar" onclick="agregar();" class="btn btn-primary"> Regístrate aquí </button>
+      </div>
+    </div>
+  </div>
+  </form>
+  <script>
+        //chosen institución
+        $('.chosenCiclo, .chosenProgramas').chosen({no_results_text: "No hay resultados...",allow_single_deselect: true});
+        $(".chosenCiclo").chosen().on("change", function(event) { 
+                            document.getElementById('programas').value = "" ;
+                            $(".chosenProgramas").trigger('chosen:updated');                                                                                                       
+                            });
+        $(".chosenProgramas").chosen().on("chosen:showing_dropdown", function(event) {  
+                            $(".chosenProgramas").trigger('chosen:updated');                                                                           
+                            });
+        </script>
+<br>
+<footer class="bg-dark" style="margin-top: 1rem; padding: 1rem 0">
+       <span class="text-light text-center" style="display: block">
+        US Privacy Policy | International Privacy Policy | Cookie Notice
+      </span>
+      <span class="text-light text-center" style="display: block">
+        Normas APA Copyright 2020. Información Recopilada de:
+        https://www.Funeraria.com
+      </span>
+      <span class="text-light text-center" style="display: block"
+        >Tel: 42-42-564!</span>
+    </footer>
+  </body>
+  </html>
