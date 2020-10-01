@@ -6,7 +6,7 @@
     <title>Contacto</title>
     <script src="../js/jquery-3.4.1.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../js/pqrs.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -20,55 +20,45 @@
     <header>
       <img src="../img/par.jpg" class="img-fluid"/>
     </header>
-    <nav class="navbar navbar-expand-lg bg-dark  navbar-light ">
-      <a class="navbar-brand text-light" href="../index.html">Áncora</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="">Áncora</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="../index.html">Inicio</a>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="planes.html">Planes</a>
+            <a class="nav-link" href="planes.html">Planes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="servicios.html">Servicios</a>
+            <a class="nav-link" href="servicios.html">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="registro.html">Registro</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="contacto.html">Contacto</a>
-          </li>
+            <a class="nav-link" href="login1.html">Login</a>
+          </li>    
         </ul>
-      </div>
+      </div>  
     </nav>
 
   </br>
-  <form>
+  <form class="form-horizontal" id="form-p">
     <div class="container">
+
        <h2 class="text-center">Formulario de contacto</h2>
-    </br>
+        </br>
 
-    <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Tipo de Identificación</label>
-
-      <div class="col-sm-5">
+      <div class="form-group ">
+       <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Tipo de Identificación</label>
+      <div  class="col-lg-5 col-md-8 col-sm-12">
         <select class="form-control" id="tipo" name="idtf">
           <option selected>Seleccione un Tipo de Documento</option>
           <option value="CC">Cédula de Ciudadanía</option>
-          <option value="TI">Tarjeta de Identidad</option>
           <option value="CE">Cédula de Extranjería</option>
           <option value="NIT">NIT</option>
           <option value="PSP">Pasaporte</option>
@@ -78,37 +68,37 @@
 
 
     <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Número de Identificación</label>
-      <div class="col-sm-5">
+      <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Número de Identificación</label>
+      <div class="col-lg-5 col-md-8 col-sm-12">
         <input type="text" class="form-control" id="ide" placeholder="Número de Indentificación" name="ndi" required>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Nombres y Apellidos:</label>
-      <div class="col-lg-5  col-sm-5">
+      <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Nombres y Apellidos:</label>
+      <div class="col-lg-5 col-md-8 col-sm-12">
         <input type="text" class="form-control" id="nombres" placeholder="Ingresa el nombre" name="name" required>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Email:</label>
-      <div class="col-sm-5">
+      <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Email:</label>
+      <div class="col-lg-5 col-md-8 col-sm-12">
         <input type="email" class="form-control" id="email" placeholder="Ingresa un correo" name="email" required>
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Telefono:</label>
-      <div class="col-sm-5">
-        <input type="telefono" class="form-control" id="telefono" placeholder="Ingresa su telefono" name="telefono">
+      <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Telefono:</label>
+      <div class="col-lg-5 col-md-8 col-sm-12">
+        <input type="text" class="form-control" id="telefono" placeholder="Ingresa su telefono" name="telefono">
       </div>
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Tipo de Solicitud</label>
-      <div class="col-sm-5">
-        <select class="form-control" id="tipo2" name="idtf2">
+      <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Tipo de Solicitud</label>
+      <div class="col-lg-5 col-md-8 col-sm-12">
+        <select class="form-control" id="tiposolicitud" name="idtf2">
           <option selected>Seleccione un Tipo de Solicitud</option>
 				  <option value="Petición">Petición</option>
 				  <option value="Queja">Queja</option>
@@ -119,14 +109,14 @@
     </div>
 
     <div class="form-group">
-      <label class="control-label col-sm-2 col-sm-offset-2">Mensaje</label>
-      <div class="col-sm-5">
+      <label class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">Mensaje</label>
+      <div class="col-lg-5 col-md-8 col-sm-12">
         <textarea id="mensaje" class="form-control"></textarea>
       </div>
     </div>
 
     <div class="form-group">        
-      <div class="col-sm-offset-4 col-sm-8">
+      <div class="control-label col-lg-2 col-md-2 col-sm-6 col-sm-offset-2">
         <button type="submit" id="guardarpqrs" onclick="agregarpqrs();" class="btn btn-primary"> Regístrar Consulta</button>
       </div>
     </div>
@@ -148,4 +138,6 @@
         >Tel: 42-42-564!</span>
       >
     </footer>
+    <script src="../js/pqrs.js"></script>
+    </body>
 </html>
